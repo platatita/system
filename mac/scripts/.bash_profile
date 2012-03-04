@@ -14,7 +14,7 @@ alias gb='git branch'
 alias gl='git log'
 
 # home
-alias conf='cd ~/sources/git/configuration'
+alias system='cd ~/sources/git/system'
 
 # anixe
 alias anx='cd ~/anx'
