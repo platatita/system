@@ -1,0 +1,2 @@
+# remove all .git directories from current directory and subdirecotires
+rm -rf `find . -type d -name .git`

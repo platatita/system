@@ -1,0 +1,52 @@
+#! /bin/bash -l
+
+SCRIPTNAME=`basename $0`
+
+echo
+echo "************************ start $SCRIPTNAME ************************"
+echo
+sleep 2
+
+echo ----------------------- install vim -----------------------
+sudo apt-get -y install vim
+sudo apt-get -y install vim-gtk
+sleep 1
+
+echo ----------------------- install git -----------------------
+sudo apt-get -y install git-core
+sudo apt-get -y install gitk
+sleep 1
+
+echo ----------------------- install curl -----------------------
+sudo apt-get -y install curl
+sleep 1
+
+echo ----------------------- install rvm -----------------------
+if [ ! -f $HOME/.rvm/scripts/rvm ]; then
+	bash -s stable < <(curl -s https://raw.github.com/wayneeseguin/rvm/master/binscripts/rvm-installer)
+	echo '' >> $HOME/.bashrc
+	echo '# ----------------------- custom settings ----------------------------' >> $HOME/.bashrc
+	echo '[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function' >> $HOME/.bashrc
+	sleep 1
+	source $HOME/.rvm/scripts/rvm
+	sleep 1
+else
+	echo rvm already installed
+fi
+rvm user all
+
+echo ----------------------- install zlib -----------------------
+rvm pkg install zlib
+sleep 1
+
+echo ----------------------- install ruby 1.9.3 -----------------------
+rvm install 1.9.3
+sleep 1
+rvm use 1.9.3 --default
+
+echo ----------------------- install rake -----------------------
+gem install rake
+sleep 1
+
+echo "************************ end $SCRIPTNAME ************************"
+
