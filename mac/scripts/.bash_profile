@@ -1,21 +1,24 @@
 
 # Setting Variable Environment
+# add mongo to system PATH
 export PATH=$PATH:/usr/local/mongodb
 export PATH=$PATH:/usr/local/mongodb/2.0.3/bin
+# dispaly in the terminal the username@hostname:current directory path.
 export PS1='\u@\H:\w$ '
 
 # set terminal colors
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-# git
+# general git aliases
 alias gs='git status'
 alias gp='git pull'
 alias gb='git branch'
 alias gl='git log'
 
-# home
+# github repos aliases
 alias system='cd ~/sources/git/system'
+alias dev='cd ~/sources/git/dev'
 
 # anixe
 alias anx='cd ~/anx'
