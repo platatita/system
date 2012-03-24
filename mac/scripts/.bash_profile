@@ -2,6 +2,7 @@
 # Setting Variable Environment
 export PATH=$PATH:/usr/local/mongodb
 export PATH=$PATH:/usr/local/mongodb/2.0.3/bin
+export PS1='\u@\H:\w$ '
 
 # set terminal colors
 export CLICOLOR=1
