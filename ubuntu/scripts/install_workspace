@@ -21,8 +21,8 @@ echo ----------------------- install curl -----------------------
 sudo apt-get -y install curl
 sleep 1
 
-echo ----------------------- install automake -----------------------
-sudo apt-get install automake
+echo ----------------------- install necessary libs -----------------------
+sudo apt-get -y install automake libruby1.8 zlib1g-dev libssl-dev libreadline5-dev build-essential libxslt-dev libxml2-dev
 sleep 1
 
 echo ----------------------- install rvm -----------------------
