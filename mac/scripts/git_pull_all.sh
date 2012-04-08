@@ -10,7 +10,7 @@ function iterate_through_git_repo {
   for (( i=0; i<$DIRS_LEN;i++ )) do
     local repo=${DIRS[${i}]}
     local proj_dir=${repo/\/\.git*/}
-    echo proj_dir: $proj_dir, git_dir: $repo
+    echo ---------- proj_dir: $proj_dir, git_dir: $repo ---------- 
     do_git_pull $proj_dir
   done
 }
