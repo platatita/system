@@ -10,6 +10,9 @@ export PS1='\u@\H:\w$ '
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
+# mongo
+alias pmongo='cd /usr/local/mongodb/2.0.3/bin'
+
 # general git aliases
 alias gs='git status'
 alias gp='git pull'
