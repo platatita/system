@@ -18,7 +18,7 @@ alias gl='git log'
 
 # bundler
 alias be='bundle exec'
-alias ber='bundle exec rake'
+alias ber='bundle exec rake -T'
 alias bers='bundle exec rake spec'
 alias bert='bundle exec rake test'
 alias berc='bundle exec rake cukes'

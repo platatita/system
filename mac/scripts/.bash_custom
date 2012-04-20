@@ -1,3 +1,5 @@
+#! /bin/bash
+
 # Setting Variable Environment
 # add mongo to system PATH
 export PATH=$PATH:/usr/local/mongodb
