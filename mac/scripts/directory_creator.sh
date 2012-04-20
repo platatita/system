@@ -21,3 +21,4 @@ echo make anixe folder structure
 mkdir -pv ~/anx/var/log
 mkdir -pv ~/anx/bin/tools
 mkdir -pv ~/anx/sources/git
+mkdir -pv ~/anx/tmp
