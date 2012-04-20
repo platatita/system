@@ -1,3 +1,4 @@
+# you have to add this at the end of the .bash_profile file in home directory if it exists otherwise just copy it to the home directory.
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
