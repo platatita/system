@@ -1,6 +1,29 @@
 # remove all .git directories from current directory and subdirecotires
 rm -rf `find . -type d -name .git`
 
-
 # download via ssh whole 'data' directory from remote server to local host
 ssh user@server "tar -cf - /var/data | gzip -9cf" > data.tar.gz
+
+
+# display mac users and its IDs
+dscl . -list /Users UniqueID
+# display mac users and its IDs in ascending order by sorting the result on the second field "ID"
+dscl . -list /Users UniqueID | sort -k 2n
+
+# create user from terminal step by step
+# Create a new entry in the local (/) domain under the category /Users.
+sudo dscl . -create /Users/test_admin
+# Create and set the shell property to bash
+sudo dscl . -create /Users/test_admin UserShell /bin/bash
+# Create and set the user’s full name.
+sudo dscl . -create /Users/test_admin RealName "Marcin"
+# Create and set the user’s ID.
+sudo dscl . -create /Users/test_admin UniqueID 503
+# Create and set the user’s group ID property.
+sudo dscl . -create /Users/test_admin PrimaryGroupID 1000
+# Create and set the user home directory.
+sudo dscl . -create /Users/test_admin NFSHomeDirectory /Local/Users/test_admin
+# Set the password.
+sudo dscl . -passwd /Users/test_admin 123
+# If you would like test_admin to be able to perform administrative functions:
+sudo dscl . -append /Groups/admin GroupMembership test_admin
