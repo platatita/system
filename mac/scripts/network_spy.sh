@@ -1,6 +1,6 @@
 #! /bin/bash
 
-BROADCASTMASK=192.168.0.255
+BROADCASTMASK=192.168.1.255
 if [ -n "${1}" ]; then
   BROADCASTMASK=$1
 fi
