@@ -4,6 +4,10 @@
 # add mongo to system PATH
 export PATH=$PATH:/usr/local/mongodb
 export PATH=$PATH:/usr/local/mongodb/2.0.3/bin
+
+# add /opt/local/bin to the PATH
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+
 # dispaly in the terminal the username@hostname:current directory path.
 export PS1='\u@\H:\w$ '
 
