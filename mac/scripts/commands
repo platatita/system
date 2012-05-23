@@ -27,3 +27,9 @@ sudo dscl . -create /Users/test_admin NFSHomeDirectory /Local/Users/test_admin
 sudo dscl . -passwd /Users/test_admin 123
 # If you would like test_admin to be able to perform administrative functions:
 sudo dscl . -append /Groups/admin GroupMembership test_admin
+
+# encrypt the file using openssl
+openssl des3 -salt -in file -out encrypted_file
+# decrypt the file using openssl
+openssl des3 -d -salt -in encrypted_file -out decrypted_file
+
