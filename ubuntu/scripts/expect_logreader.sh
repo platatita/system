@@ -1,7 +1,8 @@
 #! /usr/bin/expect --
 
 set user "logreader"
-set pass "QN6reC"
+# please set password
+set pass ""
 set serv [lindex $argv 0]
 set rid [lindex $argv 1]
 set login_error 1
