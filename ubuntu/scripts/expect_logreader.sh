@@ -1,7 +1,7 @@
 #! /usr/bin/expect --
 
 set user "logreader"
-# please set password
+# !!!!!!!!!!! set password !!!!!!!!!!!
 set pass ""
 set serv [lindex $argv 0]
 set rid [lindex $argv 1]
@@ -54,7 +54,7 @@ log_file -noappend -a $result_file
 send "cd $et_log_dir\r"
 send "$log_parser -u full -f $search_log_file -t \"\[\\r\\n;{$rid};\\r\\n\];\" -v\r"
 # wait for the search result max 180 seconds
-set timeout 5
+set timeout 180
 expect {
   "Elapsed time:" {
     log_user 1
