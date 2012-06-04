@@ -1,0 +1,2 @@
+# convert the putty *.ppk private key into *.ssh private key
+puttygen /d/anx/etc/logreader/logreader.ppk -O private-openssh -o /d/anx/etc/logreader/2logreader.ssh
