@@ -14,7 +14,7 @@ alias pmongo='cd /usr/local/mongodb/2.0.3/bin'
 alias gs='git status'
 alias gp='git pull'
 alias gb='git branch'
-alias gl='git log'
+alias gl='git log --color'
 
 # bundler
 alias be='bundle exec'
