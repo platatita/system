@@ -2,6 +2,18 @@
 # CSV file structure
 # KDNR###KDANREDE###EMAIL###KDNAME1###KDSTRASSE###KDPLZ###KDORT###KDUSTID###STEUERNUMMER###LKZ###DPPROVISION###BANKNAME###BLZ###KTO###PHOTEL###AGTBST
 
+function AddTerminalToUniqArray(terminal) {
+	uniq_terminal_array[terminal] = terminal
+}
+
+function IsTerminalInUniqArray(terminal) {
+	return terminal in uniq_terminal_array
+}
+
+function AddTerminalToRepeatedArray(terminal, agency) {
+	repeated_array[agency, terminal] = terminal
+}
+
 BEGIN { 
 	FS="###"
 	agency=1
@@ -12,23 +24,23 @@ BEGIN {
 		count = split($terminal, sub_array, ",")
 		for(i=1; i<=count; ++i) {
 			sub_item = sub_array[i]
-			if (sub_item in array) {
-				repeated_array[sub_item] = sub_item
+			if (IsTerminalInUniqArray(sub_item)) {
+				AddTerminalToRepeatedArray(sub_item, $agency)
 			} else {
-				array[sub_item] = sub_item
+				AddTerminalToUniqArray(sub_item)
 			}
 		}
-	} else if ($terminal in array) {
-		repeated_array[$terminal] = $terminal
+	} else if (IsTerminalInUniqArray($terminal)) {
+		AddTerminalToRepeatedArray($terminal, $agency)
 	} else {
-		array[$terminal] = $terminal
+		AddTerminalToUniqArray($terminal)
 	}
-
 }
 END {
-	for(item in repeated_array) {
-		print item
-		++n
+	# only to see how reading from multidemensional array works, 
+	# because it is possible to print directly in the function AddTerminalToRepeatedArray
+	for(row in repeated_array) {
+		split(row, item_array, SUBSEP)
+		print item_array[1] " " item_array[2]
 	}
-	print "found: " n
 }
