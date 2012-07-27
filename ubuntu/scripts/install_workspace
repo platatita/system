@@ -7,8 +7,8 @@ echo "************************ start $SCRIPTNAME ************************"
 echo
 sleep 2
 
-echo ----------------------- install vim -----------------------
-sudo apt-get -y install vim
+echo ----------------------- install vim, gawk -----------------------
+sudo apt-get -y install vim gawk
 sudo apt-get -y install vim-gtk
 sleep 1
 
