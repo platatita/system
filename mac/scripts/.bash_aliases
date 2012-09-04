@@ -8,7 +8,7 @@ alias dev='cd ~/sources/git/dev'
 alias sublime='~/.sublime_run.sh'
 
 # mongo
-alias pmongo='cd /usr/local/mongodb/2.0.3/bin'
+alias pmongo='cd /usr/local/mongodb/2.0.7/bin'
 
 # git
 alias gs='git status'
@@ -34,9 +34,11 @@ alias bms='cd ~/anx/sources/git/bms'
 alias tomaweb='cd ~/anx/sources/git/tomaweb'
 
 # system
-alias ll='ls -asl'
+alias ll='ls -asl --color=auto'
 alias dtree="find . -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias hosts='cat /etc/hosts'
+alias vhosts='sudo vim /etc/hosts'
 
 OSNAME=`uname`
 if [ $OSNAME = 'Linux' ]; then
