@@ -1,6 +1,9 @@
 #! /bin/bash
 
-if [ -d ~/SkyDrive/system/mac/screencapture ]; then
+if [ -d ~/Dropbox/system/mac/screencapture ]; then
+	defaults write com.apple.screencapture location ~/Dropbox/system/mac/screencapture
+	echo set screen capture location to: ~/Dropbox/system/mac/screencapture
+elif [ -d ~/SkyDrive/system/mac/screencapture ]; then
 	defaults write com.apple.screencapture location ~/SkyDrive/system/mac/screencapture
 	echo set screen capture location to: ~/SkyDrive/system/mac/screencapture
 else
