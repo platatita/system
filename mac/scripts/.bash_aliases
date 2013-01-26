@@ -3,6 +3,8 @@
 # github repos aliases
 alias system='cd ~/sources/git/system'
 alias dev='cd ~/sources/git/dev'
+alias skydrive='cd ~/SkyDrive'
+alias dropbox='cd ~/Dropbox'
 
 # launching sublime alias
 alias sublime='~/.sublime_run.sh'
@@ -34,7 +36,7 @@ alias bms='cd ~/anx/sources/git/bms'
 alias tomaweb='cd ~/anx/sources/git/tomaweb'
 
 # system
-alias ll='ls -asl --color=auto'
+alias ll='ls -asl'
 alias dtree="find . -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias hosts='cat /etc/hosts'
