@@ -1,2 +1,5 @@
 # to use airport command from terminal, it needs to create soft link to the 'airport' command
 sudo ln -s /System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport /usr/sbin/airport
+
+# to connect to wifi network from command line use below command 'networksetup'
+networksetup -setairportnetwork Airport [router SSID] [password]
