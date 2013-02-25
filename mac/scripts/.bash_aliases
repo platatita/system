@@ -10,7 +10,7 @@ alias dropbox='cd ~/Dropbox'
 alias sublime='~/.sublime_run.sh'
 
 # mongo
-alias pmongo='cd /usr/local/mongodb/2.0.7/bin'
+alias pmongo='cd /opt/mongodb/bin'
 
 # git
 alias gs='git status'
