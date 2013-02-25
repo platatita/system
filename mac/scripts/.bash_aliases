@@ -42,6 +42,14 @@ alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias hosts='cat /etc/hosts'
 alias vhosts='sudo vim /etc/hosts'
 
+# networksetup
+alias ns='networksetup'
+alias nsc='networksetup -printcommands'
+alias list-pref-wifi='ns -listpreferredwirelessnetworks en0'
+
+# airport
+alias wifi-scan='airport -s'
+
 OSNAME=`uname`
 if [ $OSNAME = 'Linux' ]; then
   alias vbash='vim ~/.bashrc'
