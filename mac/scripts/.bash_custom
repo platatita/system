@@ -6,6 +6,7 @@ export PATH=$PATH:/opt/mongodb/bin
 
 # scala
 export PATH=$PATH:/opt/scala/bin
+export PATH=$PATH:/opt/scalatest/lib
 
 # add /opt/local/bin to the PATH
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
