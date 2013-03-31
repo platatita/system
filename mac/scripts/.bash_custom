@@ -8,6 +8,9 @@ export PATH=$PATH:/opt/mongodb/bin
 export PATH=$PATH:/opt/scala/bin
 export PATH=$PATH:/opt/scalatest/lib
 
+# play framework
+export PATH=$PATH:/Users/admin/playframework/play
+
 # add /opt/local/bin to the PATH
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 
