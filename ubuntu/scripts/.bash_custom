@@ -1,0 +1,23 @@
+#! /bin/bash
+
+# Setting Variable Environment
+# add mongo to system PATH
+export PATH=$PATH:/usr/local/mongodb
+export PATH=$PATH:/usr/local/mongodb/2.0.7/bin
+
+# add /opt/local/bin to the PATH
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin
+
+# dispaly in the terminal the username@hostname:current directory path.
+source /etc/bash_completion.d/git
+export PS1='\u@\H:\w$(__git_ps1 " (%s)")\$ '
+
+# set terminal colors
+export CLICOLOR=1
+export LSCOLORS=ExFxCxDxBxegedabagacad
+
+
+export PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting
+
+# Load RVM into a shell session *as a function*
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
