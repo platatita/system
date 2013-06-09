@@ -7,3 +7,11 @@ fi
 if [ -f ~/.bash_custom ]; then
     . ~/.bash_custom
 fi
+
+# macports bash-completion link: http://trac.macports.org/wiki/howto/bash-completion
+if [ -f /opt/local/etc/profile.d/bash_completion.sh ]; then
+  source /opt/local/etc/profile.d/bash_completion.sh
+fi
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
