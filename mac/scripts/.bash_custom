@@ -4,6 +4,9 @@
 # add mongo to system PATH
 export PATH=$PATH:/opt/mongodb/bin
 
+# postgresql
+export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+
 # scala
 export PATH=$PATH:/opt/scala/bin
 export PATH=$PATH:/opt/scalatest/lib
