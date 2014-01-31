@@ -2,7 +2,7 @@
 
 # Setting Variable Environment
 # add mongo to system PATH
-export PATH=$PATH:/usr/local/mongodb
+export PATH=$PATH:/usr/local/mongodb/current
 
 # add /opt/local/bin to the PATH
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin

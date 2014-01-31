@@ -10,7 +10,7 @@ alias dropbox='cd ~/Dropbox'
 alias sublime='~/.sublime_run.sh'
 
 # mongo
-alias pmongo='cd /usr/local/mongodb'
+alias pmongo='cd /usr/local/mongodb/current'
 
 # redis
 alias predis='cd /usr/local/redis'
