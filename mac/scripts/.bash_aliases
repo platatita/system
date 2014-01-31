@@ -10,7 +10,10 @@ alias dropbox='cd ~/Dropbox'
 alias sublime='~/.sublime_run.sh'
 
 # mongo
-alias pmongo='cd /opt/mongodb/bin'
+alias pmongo='cd /usr/local/mongodb'
+
+# redis
+alias predis='cd /usr/local/redis'
 
 # git
 alias gs='git status'
@@ -36,7 +39,7 @@ alias bms='cd ~/anx/sources/git/bms'
 alias tomaweb='cd ~/anx/sources/git/tomaweb'
 
 # system
-alias ll='ls -asl'
+alias ll='ls -asl --color=auto'
 alias dtree="find . -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias hosts='cat /etc/hosts'
