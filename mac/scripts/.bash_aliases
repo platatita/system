@@ -13,7 +13,7 @@ alias sublime='~/.sublime_run.sh'
 alias pmongo='cd /usr/local/mongodb/current'
 
 # redis
-alias predis='cd /usr/local/redis'
+alias predis='cd /usr/local/redis/current'
 
 # git
 alias gs='git status'
@@ -39,7 +39,7 @@ alias bms='cd ~/anx/sources/git/bms'
 alias tomaweb='cd ~/anx/sources/git/tomaweb'
 
 # system
-alias ll='ls -asl --color=auto'
+alias ll='ls -asl'
 alias dtree="find . -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias hosts='cat /etc/hosts'
