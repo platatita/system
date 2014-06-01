@@ -5,6 +5,7 @@ alias system='cd ~/sources/git/system'
 alias dev='cd ~/sources/git/dev'
 alias skydrive='cd ~/SkyDrive'
 alias dropbox='cd ~/Dropbox'
+alias download='cd ~/Download'
 
 # launching sublime alias
 alias sublime='~/.sublime_run.sh'
@@ -14,6 +15,9 @@ alias pmongo='cd /usr/local/mongodb/current'
 
 # redis
 alias predis='cd /usr/local/redis/current'
+
+# passenger
+alias ppassenger=' cd /usr/local/passenger/current'
 
 # git
 alias gs='git status'
@@ -32,11 +36,13 @@ alias berf='bundle exec rake features'
 # anixe
 alias anx='cd ~/anx'
 alias anxgit='cd ~/anx/sources/git'
+alias anxtmp='cd ~/anx/tmp'
 alias synw='cd ~/anx/sources/git/synapse_worker'
 alias syna='cd ~/anx/sources/git/synapse_aer'
 alias bmsw='cd ~/anx/sources/git/bmsweb'
 alias bms='cd ~/anx/sources/git/bms'
 alias tomaweb='cd ~/anx/sources/git/tomaweb'
+alias ari='cd ~/anx/sources/git/resfinity/resfinity_ari'
 
 # system
 alias ll='ls -asl'

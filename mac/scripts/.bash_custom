@@ -2,10 +2,16 @@
 
 # Setting Variable Environment
 # add mongo to system PATH
-export PATH=$PATH:/opt/mongodb/bin
+export PATH=$PATH:/usr/local/mongodb/current
+
+# add redis to system PATH
+export PATH=$PATH:/usr/local/redis/current
+
+# add passenger to system PATH
+export PATH=$PATH:/usr/local/passenger/current
 
 # postgresql
-export PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
 
 # scala
 export PATH=$PATH:/opt/scala/bin
@@ -29,4 +35,4 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 
 
 # Load RVM into a shell session *as a function*
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
+# [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm"
