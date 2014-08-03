@@ -1,6 +1,9 @@
 # remove all .git directories from current directory and subdirecotires
 rm -rf `find . -type d -name .git`
 
+# rename all files in the directory by changing '.' to '_'
+find . -type f -exec basename {} .mkv \; | awk '/\./{ org = $0; gsub(/\./, "_"); print (org ".mkv \t" $0 ".mkv" ) }' | xargs -n2 mv
+
 # download via ssh whole 'data' directory from remote server to local host
 ssh user@server "tar -cf - /var/data | gzip -9cf" > data.tar.gz
 
