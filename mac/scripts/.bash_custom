@@ -2,19 +2,25 @@
 
 # Setting Variable Environment
 # add mongo to system PATH
-export PATH=$PATH:/usr/local/mongodb/current
+export PATH=$PATH:/opt/mongodb/current
 
 # add redis to system PATH
-export PATH=$PATH:/usr/local/redis/current
+export PATH=$PATH:/opt/redis/current
 
 # add passenger to system PATH
-export PATH=$PATH:/usr/local/passenger/current
+export PATH=$PATH:/opt/passenger/current
+
+# add memcached to system PATH
+export PATH=$PATH:/opt/memcached/current
+
+# add mono_assembly to system PATH
+export PATH=$PATH:/opt/mono_assembly/current
 
 # postgresql
 export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
 
 # scala
-export PATH=$PATH:/opt/scala/bin
+export PATH=$PATH:/opt/scala/current
 export PATH=$PATH:/opt/scalatest/lib
 
 # play framework
