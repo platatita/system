@@ -11,13 +11,16 @@ alias download='cd ~/Download'
 alias sublime='~/.sublime_run.sh'
 
 # mongo
-alias pmongo='cd /usr/local/mongodb/current'
+alias pmongo='cd /opt/mongodb/current'
 
 # redis
-alias predis='cd /usr/local/redis/current'
+alias predis='cd /opt/redis/current'
 
 # passenger
-alias ppassenger=' cd /usr/local/passenger/current'
+alias ppassenger=' cd /opt/passenger/current'
+
+# memcached
+alias pmemcached='cd /opt/memcached/current'
 
 # git
 alias gs='git status'
@@ -43,6 +46,7 @@ alias bmsw='cd ~/anx/sources/git/bmsweb'
 alias bms='cd ~/anx/sources/git/bms'
 alias tomaweb='cd ~/anx/sources/git/tomaweb'
 alias ari='cd ~/anx/sources/git/resfinity/resfinity_ari'
+alias mono_assembly='cd /opt/mono_assembly/current'
 
 # system
 alias ll='ls -asl'
