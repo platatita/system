@@ -1,25 +1,68 @@
-  #! /bin/bash
+#! /bin/bash
 
-# PATH_ARRAY=(`find . -type directory | sed "s/\(.*\)/'\1'/g"`)
-# PATH_ARRAY_LEN=${#PATH_ARRAY[@]}
+# it replaces all these characters [ -()+\[\]] in the folder or file name with underscore
+# options:
+# d - replace folders names [default]
+# f - replace files names
 
-# for (( i=0; i<$PATH_ARRAY_LEN; i++ )); do
-#   echo ${PATH_ARRAY[${i}]}
-# done
+# usage
+# * replace all subfolders of ~/tmp folder: ./translate_path ~/tmp 
+# * replace all subfolders of current dir: ./translate_path .
+# * replace all file names of current dir: ./translate_path . f
 
-SAVEIFS=$IFS
-IFS=$(echo -en "\n\b")
+# example of output:
+# ./Percy Jackson and the Olympians -> ./percy_jackson_and_the_olympians
+# ./simple folder -> ./simple_folder
 
-declare -a PATH_ARRAY
-let count=0
+if [ $# -lt 1 ]; then
+  echo "usage"
+  echo "./translate_path folder [folder (default) | in files (f)]"
+  echo "examples:"
+  echo "* replace all subfolders of ~/tmp folder: ./translate_path ~/tmp" 
+  echo "* replace all subfolders of current dir:  ./translate_path ."
+  echo "* replace all file names of current dir:  ./translate_path . f"
+  exit 0
+fi
 
-for folder in $( find . -type directory ); do
-  PATH_ARRAY[$count]="'$folder'"
-  ((count++))
-done
+FIND_DIR="$1"
+FIND_TYPE=$2
 
-PATH_ARRAY_LEN=${#PATH_ARRAY[@]}
-echo $PATH_ARRAY_LEN
-echo ${PATH_ARRAY[@]}
+if [ -z $FIND_TYPE ]; then
+  FIND_TYPE="d"
+fi
 
-IFS=$SAVEIFS
+# find $FIND_DIR -type $FIND_TYPE -iname "* *" -not -path "." | awk '{org = $0; gsub(/ /,"_", $0); printf "\"%s\" %s\n", org, tolower($0)}' | xargs -n2 mv -v
+
+find $FIND_DIR -type $FIND_TYPE -not -path "." | awk -v FIND_TYPE=$FIND_TYPE '
+  {
+    org_0 = $0; 
+    gsub(/[ -()+\[\]]/,"_", $0);
+
+    split_0_count = split($0, split_0, ".");
+    if (split_0_count > 1)
+    {
+      file = FIND_TYPE == "d" ? file = 0 : file = 1;
+
+      result = split_0[1];
+
+      for (i = 2; i <= split_0_count - file; i++)
+      {
+        result = result "_" tolower(split_0[i]);
+      }
+
+      if (file == 1)
+      {
+        result = result "." split_0[split_0_count];
+      }
+    }
+    else
+    {
+      result = $0;
+    }
+    
+    if (result != org_0)
+    {
+      printf "\"%s\" %s\n", org_0, result;
+    }
+
+  }' | xargs -n2 mv -v
