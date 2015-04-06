@@ -4,7 +4,7 @@
 # lsof -FT +r | awk 'BEGIN{FS="="};{if ($0 ~ /^p/) {pid=$0}; if ($0 ~ /^T/) { if (int($2) == 0) {print pid "->" $1 "=" $2} }}'
 
 
-# below block of code does the same like code above but add line separator after each iteration.
+# below block of code does the same like code above but adds line separator after each iteration.
 declare -i counter=0
 
 while true; do
