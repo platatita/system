@@ -1,5 +1,9 @@
 #! /bin/bash
 
+if [ -f ~/.bash_aliases_anixe ]; then
+    source ~/.bash_aliases_anixe
+fi
+
 # github repos aliases
 alias system='cd ~/sources/git/system'
 alias dev='cd ~/sources/git/dev'
