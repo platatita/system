@@ -59,10 +59,19 @@ alias mono_assembly='cd /opt/mono_assembly/current'
 
 # system
 alias ll='ls -asl'
-alias dtree="find . -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+#alias dtree="find . -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias dtree=fdtree
 alias tree="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 alias hosts='cat /etc/hosts'
 alias vhosts='sudo vim /etc/hosts'
+
+function fdtree {
+  depth=$1
+  if [ -z $depth ]; then
+    depth=3
+  fi
+  find . -maxdepth $depth -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
+}
 
 # networksetup
 alias ns='networksetup'
