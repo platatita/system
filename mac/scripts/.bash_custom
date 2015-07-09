@@ -26,6 +26,10 @@ export PATH=$PATH:/opt/scalatest/lib
 # play framework
 export PATH=$PATH:/Users/admin/playframework/play
 
+# ansible
+export ANSIBLE_HOSTS=~/ansible_hosts
+source ~/sources/git/ansible/hacking/env-setup
+
 # add /opt/local/bin to the PATH
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 
