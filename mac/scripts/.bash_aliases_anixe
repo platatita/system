@@ -16,3 +16,5 @@ alias ari='cd ~/anx/sources/git/resfinity/resfinity_ari'
 alias mono_assembly='cd /opt/mono_assembly/current'
 
 alias anx_display='alias | grep "/anx/"'
+
+alias run_specs='find spec -maxdepth 2 -type d -exec bash -c "echo {}; bundle exec rspec {}" \;'
