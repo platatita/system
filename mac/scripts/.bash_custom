@@ -26,6 +26,9 @@ export PATH=$PATH:/opt/scalatest/lib
 # play framework
 export PATH=$PATH:/Users/admin/playframework/play
 
+# cargo for rust
+export PATH=$HOME/.cargo/bin:$PATH
+
 # ansible
 export ANSIBLE_HOSTS=~/ansible_hosts
 source ~/sources/git/ansible/hacking/env-setup
