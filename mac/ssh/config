@@ -1,0 +1,63 @@
+StrictHostKeyChecking no
+
+Host proxy1
+    User deploy
+    HostName proxy1.hrc.lan
+    IdentityFile ~/.ssh/id_rsa
+
+Host proxy2
+    User deploy
+    HostName proxy2.hrc.lan
+    IdentityFile ~/.ssh/id_rsa
+
+Host pozpp1
+    User deploy
+    HostName pozpp1.hrc.lan
+    IdentityFile ~/.ssh/id_rsa
+
+Host pozpp3
+    User deploy
+    HostName pozpp3.hrc.lan
+    IdentityFile ~/.ssh/id_rsa
+
+Host pozpp4
+    User deploy
+    HostName pozpp4.hrc.lan
+    IdentityFile ~/.ssh/id_rsa
+
+Host pozpp5
+    User deploy
+    HostName pozpp5.hrc.lan
+    IdentityFile ~/.ssh/id_rsa
+
+Host pozpp6
+    User deploy
+    HostName pozpp6.hrc.lan
+    IdentityFile ~/.ssh/id_rsa
+
+Host tfr1
+    User deploy
+    HostName tfr1.hrc.lan
+    IdentityFile ~/.ssh/id_rsa
+
+Host tfr2
+    User deploy
+    HostName tfr2.hrc.lan
+    IdentityFile ~/.ssh/id_rsa
+
+Host pozppv2
+    User deploy
+    HostName pozppv2.hrc.lan
+    IdentityFile ~/.ssh/id_rsa
+
+Host pozppv3
+    User deploy
+    HostName pozppv3.hrc.lan
+    IdentityFile ~/.ssh/id_rsa
+
+Host development_tunnel
+    User deploy
+    HostName acc.resfinity.com
+    LocalForward 1212 192.168.194.232:22
+    IdentityFile ~/.ssh/id_rsa
+
