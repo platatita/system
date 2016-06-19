@@ -14,6 +14,9 @@ alias bms='cd ~/anx/sources/git/bms'
 alias tomaweb='cd ~/anx/sources/git/tomaweb'
 alias ari='cd ~/anx/sources/git/resfinity/resfinity_ari'
 alias mono_assembly='cd /opt/mono_assembly/current'
+alias res_pa_data='cd /var/data/resfinity_pa'
+alias ari_data='cd /var/data/resfinity_ari'
+alias scraper_data='cd /var/data/resfinity_api_scraper'
 
 alias anx_display='alias | grep "/anx/"'
 
