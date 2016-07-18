@@ -37,11 +37,13 @@ alias gl='git log --color'
 
 # bundler
 alias be='bundle exec'
-alias ber='bundle exec rake -T'
+alias bert='bundle exec rake -T'
 alias bers='bundle exec rake spec'
-alias bert='bundle exec rake test'
 alias berc='bundle exec rake cukes'
 alias berf='bundle exec rake features'
+
+# mono
+alias opens='open -n *.sln'
 
 # system
 alias ll='ls -asl'
