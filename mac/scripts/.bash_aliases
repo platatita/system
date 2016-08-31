@@ -55,10 +55,16 @@ alias vhosts='sudo vim /etc/hosts'
 
 function fdtree {
   depth=$1
+  dir=$2
+
   if [ -z $depth ]; then
     depth=3
   fi
-  find . -maxdepth $depth -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
+  if [ -z $dir ]; then
+    dir='.'
+  fi
+
+  find $dir -maxdepth $depth -type d -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'
 }
 
 # networksetup
