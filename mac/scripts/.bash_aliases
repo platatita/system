@@ -9,7 +9,9 @@ alias system='cd ~/sources/git/system'
 alias dev='cd ~/sources/git/dev'
 alias skydrive='cd ~/SkyDrive'
 alias dropbox='cd ~/Dropbox'
-alias download='cd ~/Download'
+alias downloads='cd ~/Downloads'
+alias pictures='cd ~/Pictures'
+alias movies='cd ~/Movies'
 
 # media
 alias media='cd /var/data/media'
