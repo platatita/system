@@ -36,6 +36,9 @@ source ~/sources/git/ansible/hacking/env-setup
 # add /opt/local/bin to the PATH
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 
+# disables adding by tar additional files like "._" while compressing
+export COPYFILE_DISABLE=true
+
 # dispaly in the terminal the username@hostname:current directory path.
 read_git_branch() {
   git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
