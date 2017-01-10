@@ -1,4 +1,8 @@
-StrictHostKeyChecking no
+UserKnownHostsFile      /dev/null
+CheckHostIP             no
+StrictHostKeyChecking   no
+ServerAliveInterval     30
+ForwardAgent            yes
 
 Host proxy1
     User deploy
