@@ -1,1 +1,1 @@
-source /etc/bash_completion.d/git
+source /usr/share/bash-completion/completions/git
