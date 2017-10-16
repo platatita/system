@@ -16,8 +16,8 @@ export PATH=$PATH:/opt/memcached/current
 # add mono_assembly to system PATH
 export PATH=$PATH:/opt/mono_assembly/current
 
-# postgresql
-export PATH="/Applications/Postgres93.app/Contents/MacOS/bin:$PATH"
+# postgresql when installed from sources
+export PATH="/usr/local/pgsql/bin:$PATH"
 
 # scala
 export PATH=$PATH:/opt/scala/current
