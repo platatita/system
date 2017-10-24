@@ -33,6 +33,9 @@ export PATH=$HOME/.cargo/bin:$PATH
 export ANSIBLE_HOSTS=~/ansible_hosts
 source ~/sources/git/ansible/hacking/env-setup
 
+# google-cloud-sdk
+export PATH=$PATH:/opt/google-cloud-sdk/current
+
 # add /opt/local/bin to the PATH
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 
