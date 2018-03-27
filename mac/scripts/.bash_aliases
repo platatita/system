@@ -85,3 +85,8 @@ else
   alias vbash='vim ~/.bash_profile'
   alias sbash='source ~/.bash_profile'
 fi
+
+# create folder and goes into it
+function mkcd() {
+  mkdir -pv "$1" && cd "$1";
+}
