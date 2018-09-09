@@ -17,7 +17,7 @@ export PATH=$PATH:/opt/memcached/current
 export PATH=$PATH:/opt/mono_assembly/current
 
 # postgresql when installed from sources
-export PATH="/usr/local/pgsql/bin:$PATH"
+export PATH="/opt/postgres/current:$PATH"
 
 # scala
 export PATH=$PATH:/opt/scala/current
