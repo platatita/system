@@ -9,24 +9,24 @@ alias anxetc='cd ~/anx/etc'
 alias anx_platform='cd ~/anx/etc/platform'
 alias anx_assembly='cd ~/anx/bin/assembly'
 
-alias sdpa='cd ~/anx/sources/git/sdpa'
+alias sdpa='cd $ANX_GIT/sdpa'
 
-alias synapse='cd ~/anx/sources/git/synapse'
-alias synw='cd ~/anx/sources/git/synapse_worker'
-alias syna='cd ~/anx/sources/git/synapse_aer'
+alias synapse='cd $ANX_GIT/synapse'
+alias synw='cd $ANX_GIT/synapse_worker'
+alias syna='cd $ANX_GIT/synapse_aer'
 
-alias anixe='cd ~/anx/sources/git/anixe'
-alias resfinity='cd ~/anx/sources/git/resfinity'
-alias suppliers='cd ~/anx/sources/git/suppliers'
+alias anixe='cd $ANX_GIT/anixe'
+alias resfinity='cd $ANX_GIT/resfinity'
+alias suppliers='cd $ANX_GIT/suppliers'
 
-alias bmsw='cd ~/anx/sources/git/bmsweb'
-alias bms='cd ~/anx/sources/git/bms'
+alias bmsw='cd $ANX_GIT/bmsweb'
+alias bms='cd $ANX_GIT/bms'
 
-alias tomaweb='cd ~/anx/sources/git/tomaweb'
+alias tomaweb='cd $ANX_GIT/tomaweb'
 
-alias ari='cd ~/anx/sources/git/resfinity/resfinity_ari'
-alias ariz_reader='cd ~/anx/sources/git/resfinity/resfinity_ariz_readers'
-alias ariz='cd ~/anx/sources/git/resfinity/resfinity_ariz_transformers'
+alias ari='cd $ANX_GIT/resfinity/resfinity_ari'
+alias ariz_reader='cd $ANX_GIT/resfinity/resfinity_ariz_readers'
+alias ariz='cd $ANX_GIT/resfinity/resfinity_ariz_transformers'
 
 alias mono_assembly='cd /opt/mono_assembly/current'
 
@@ -36,6 +36,7 @@ alias ariz_data='cd /var/data/resfinity/transformers'
 alias df_data='cd /var/data/resfinity/datafactory'
 alias scraper_data='cd /var/data/resfinity_api_scraper'
 
+# aclr8 group
 alias aclr8='cd $ANX_GIT/aclr8/aclr8'
 alias hs='cd $ANX_GIT/aclr8/hotels_service'
 alias mercures='cd $ANX_GIT/aclr8/mercures'
@@ -44,6 +45,12 @@ alias cm_tools='cd $ANX_GIT/aclr8/cm_tools'
 alias rt='cd $ANX_GIT/aclr8/ratetiger_webservice'
 alias dg='cd $ANX_GIT/aclr8/dingus_webservice'
 alias sm='cd $ANX_GIT/aclr8/siteminder_webservice'
+
+# gwg group
+alias cerberus='cd $ANX_GIT/gwg/cerberus'
+
+# aclr8 tests
+alias aclr8_gwg_tests='cd $ANX_GIT/annalise.scicluna/aclr8_tests'
 
 alias anx_display='alias | grep "/anx/"'
 
