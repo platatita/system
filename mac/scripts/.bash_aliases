@@ -36,13 +36,21 @@ alias gs='git status'
 alias gp='git pull'
 alias gb='git branch'
 alias gl='git log --color'
+alias gck='git checkout'
+alias gr='git rebase'
+alias gpom='git push origin master'
 
 # bundler
 alias be='bundle exec'
+
+# bundler rake
 alias bert='bundle exec rake -T'
 alias bers='bundle exec rake spec'
 alias berc='bundle exec rake cukes'
 alias berf='bundle exec rake features'
+
+# bundler cap
+alias bect='bundle exec cap -T'
 
 # mono
 alias opens='open -n *.sln'
