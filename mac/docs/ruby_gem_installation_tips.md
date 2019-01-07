@@ -1,5 +1,7 @@
-# to install therubyracer when some errors occurres
+# to install ruby 1.9.3-p551 on mac os
+rvm install 1.9.3 --with-gcc=clang
 
+# to install therubyracer when some errors occurres
 # therubyracer install command
 gem install therubyracer
 # or with specifying version
