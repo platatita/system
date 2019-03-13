@@ -39,6 +39,9 @@ export PATH=$PATH:/opt/google-cloud-sdk/current
 # add /opt/local/bin to the PATH
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 
+# add brew /usr/local/sbin to the PATH
+export PATH=$PATH:/usr/local/sbin
+
 # disables adding by tar additional files like "._" while compressing
 export COPYFILE_DISABLE=true
 
