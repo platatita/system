@@ -47,7 +47,7 @@ export PATH="/usr/local/heroku/bin:$PATH"
 export PATH="/usr/local/bin:$PATH"
 
 # Add the following lines to your ~/.bash_profile:
-if [[ "$OSTYPE" == "darwin" ]]; then
+if [[ "$OSTYPE" =~ "darwin" ]]; then
   if [ -f $(brew --prefix)/etc/bash_completion ]; then
       . $(brew --prefix)/etc/bash_completion
   fi
