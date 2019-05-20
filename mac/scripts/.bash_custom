@@ -42,6 +42,9 @@ export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 # add brew /usr/local/sbin to the PATH
 export PATH=$PATH:/usr/local/sbin
 
+# add qt bins
+export PATH="$PATH:/usr/local/opt/qt/bin"
+
 # disables adding by tar additional files like "._" while compressing
 export COPYFILE_DISABLE=true
 
