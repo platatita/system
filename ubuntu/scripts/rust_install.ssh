@@ -1,0 +1,19 @@
+#! /bin/bash
+
+function trace() {
+  echo "----------------------------------------------------------------------"
+  echo `date +%Y%m%dT%H%M%S` " - " $1
+}
+
+trace "install useful tools"
+sudo apt -y install nload curl wget htop wipe 
+
+
+trace "install mandatory packages for rust"
+sudo apt -y install build-essential
+
+
+trace "install rustup"
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+
+
