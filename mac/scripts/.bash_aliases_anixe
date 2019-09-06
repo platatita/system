@@ -37,6 +37,7 @@ alias df_data='cd /var/data/resfinity/datafactory'
 alias scraper_data='cd /var/data/resfinity_api_scraper'
 
 # aclr8 group
+alias deploy='cd $ANX_GIT/aclr8/deploy'
 alias aclr8='cd $ANX_GIT/aclr8/aclr8'
 alias hs='cd $ANX_GIT/aclr8/hotels_service'
 alias mercures='cd $ANX_GIT/aclr8/mercures'
@@ -45,9 +46,13 @@ alias cm_tools='cd $ANX_GIT/aclr8/cm_tools'
 alias rt='cd $ANX_GIT/aclr8/ratetiger_webservice'
 alias dg='cd $ANX_GIT/aclr8/dingus_webservice'
 alias sm='cd $ANX_GIT/aclr8/siteminder_webservice'
+alias pr='cd $ANX_GIT/aclr8/primalres_webservice'
 
 # gwg group
+alias gwg='cd $ANX_GIT/gwg'
 alias cerberus='cd $ANX_GIT/gwg/cerberus'
+alias export_center='cd $ANX_GIT/gwg/export_center_service'
+alias ariz_atcore='cd $ANX_GIT/gwg/resfinity_atcore_transformers_ariz'
 
 # aclr8 tests
 alias aclr8_gwg_tests='cd $ANX_GIT/annalise.scicluna/aclr8_tests'
