@@ -5,16 +5,13 @@ if [ -f ~/.bash_aliases_anixe ]; then
 fi
 
 # github repos aliases
-alias system='cd ~/sources/git/system'
-alias dev='cd ~/sources/git/dev'
-alias skydrive='cd ~/SkyDrive'
-alias dropbox='cd ~/Dropbox'
 alias downloads='cd ~/Downloads'
-alias pictures='cd ~/Pictures'
+alias dropbox='cd ~/Dropbox'
+alias dropbox_ver='cd ~/Dropbox/documents/versioned'
+alias dropbox_nover='cd ~/Dropbox/documents/no_versioned'
 alias movies='cd ~/Movies'
-
-# media
-alias media='cd /var/data/media'
+alias pictures='cd ~/Pictures'
+alias system='cd ~/sources/git/system'
 
 # launching sublime alias
 alias sublime='~/.sublime_run.sh'
@@ -39,6 +36,7 @@ alias gl='git log --color'
 alias gck='git checkout'
 alias gr='git rebase'
 alias gpom='git push origin master'
+alias gpom='git push origin dev'
 
 # bundler
 alias be='bundle exec'
