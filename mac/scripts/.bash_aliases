@@ -36,7 +36,7 @@ alias gl='git log --color'
 alias gck='git checkout'
 alias gr='git rebase'
 alias gpom='git push origin master'
-alias gpom='git push origin dev'
+alias gpod='git push origin dev'
 
 # bundler
 alias be='bundle exec'
