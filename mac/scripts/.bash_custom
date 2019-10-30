@@ -1,14 +1,20 @@
 #! /bin/bash
 
+# brew git
+export PATH="$PATH:/usr/local/bin"
+
+# cargo for rust
+export PATH=$PATH:$HOME/.cargo/bin
+
+# add brew gnu grep /usr/local/opt/grep/libexec/gnubin
+export PATH=$PATH:/usr/local/opt/grep/libexec/gnubin/
+
 # Setting Variable Environment
 # add mongo to system PATH
 export PATH=$PATH:/opt/mongodb/current
 
 # add redis to system PATH
 export PATH=$PATH:/opt/redis/current
-
-# add passenger to system PATH
-export PATH=$PATH:/opt/passenger/current
 
 # add memcached to system PATH
 export PATH=$PATH:/opt/memcached/current
@@ -17,17 +23,11 @@ export PATH=$PATH:/opt/memcached/current
 export PATH=$PATH:/opt/mono_assembly/current
 
 # postgresql when installed from sources
-export PATH="/opt/postgres/current:$PATH"
+export PATH="$PATH:/opt/postgres/curren"
 
 # scala
 export PATH=$PATH:/opt/scala/current
 export PATH=$PATH:/opt/scalatest/lib
-
-# play framework
-export PATH=$PATH:/Users/admin/playframework/play
-
-# cargo for rust
-export PATH=$HOME/.cargo/bin:$PATH
 
 # ansible
 export ANSIBLE_HOSTS=~/ansible_hosts
@@ -35,9 +35,6 @@ source ~/sources/git/ansible/hacking/env-setup
 
 # google-cloud-sdk
 export PATH=$PATH:/opt/google-cloud-sdk/current
-
-# add /opt/local/bin to the PATH
-export PATH=$PATH:/opt/local/bin:/opt/local/sbin
 
 # add brew /usr/local/sbin to the PATH
 export PATH=$PATH:/usr/local/sbin
@@ -58,7 +55,7 @@ export PS1="\u@\H:\w\[\033[32m\]\$(read_git_branch)\[\033[00m\]$ "
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
 
-# sets default editor for terminal 
+# sets default editor for terminal
 export EDITOR=/usr/bin/vim
 
 alias paths='split_path'
