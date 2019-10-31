@@ -1,13 +1,17 @@
 #! /bin/bash
 
+# for Mac OSX PATH i loaded in following order:
+# /private/etc/paths
+# /private/etc/paths.d/*
+
+# add brew gnu grep /usr/local/opt/grep/libexec/gnubin
+export PATH=/usr/local/opt/grep/libexec/gnubin/:$PATH
+
 # brew git
 export PATH="$PATH:/usr/local/bin"
 
 # cargo for rust
 export PATH=$PATH:$HOME/.cargo/bin
-
-# add brew gnu grep /usr/local/opt/grep/libexec/gnubin
-export PATH=$PATH:/usr/local/opt/grep/libexec/gnubin/
 
 # Setting Variable Environment
 # add mongo to system PATH
