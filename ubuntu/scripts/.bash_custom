@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# cargo for rust
+export PATH=$HOME/.cargo/bin:$PATH
+
 # Setting Variable Environment
 # add mongo to system PATH
 export PATH=$PATH:/opt/mongodb/current
@@ -7,24 +10,14 @@ export PATH=$PATH:/opt/mongodb/current
 # add redis to system PATH
 export PATH=$PATH:/opt/redis/current
 
-# add passenger to system PATH
-export PATH=$PATH:/opt/passenger/current
-
 # add memcached to system PATH
 export PATH=$PATH:/opt/memcached/current
 
 # add mono_assembly to system PATH
 export PATH=$PATH:/opt/mono_assembly/current
 
-# scala
-export PATH=$PATH:/opt/scala/current
-export PATH=$PATH:/opt/scalatest/lib
-
-# play framework
-export PATH=$PATH:/Users/admin/playframework/play
-
-# cargo for rust
-export PATH=$HOME/.cargo/bin:$PATH
+# postgresql when installed from sources
+export PATH="$PATH:/opt/postgres/curren"
 
 # add /opt/local/bin to the PATH
 export PATH=$PATH:/opt/local/bin:/opt/local/sbin
@@ -44,6 +37,11 @@ export LSCOLORS=ExFxCxDxBxegedabagacad
 
 # sets default editor for terminal
 export EDITOR=/usr/bin/vim
+
+alias paths='split_path'
+function split_path() {
+  echo $PATH | tr ":" "\n";
+}
 
 if [ -f ~/.bash_custom_linux ]; then
     source ~/.bash_custom_linux

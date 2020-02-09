@@ -1,6 +1,6 @@
 #! /bin/bash
 
-# for Mac OSX PATH i loaded in following order:
+# for Mac OSX PATH is loaded in following order:
 # /private/etc/paths
 # /private/etc/paths.d/*
 
@@ -28,10 +28,6 @@ export PATH=$PATH:/opt/mono_assembly/current
 
 # postgresql when installed from sources
 export PATH="$PATH:/opt/postgres/curren"
-
-# scala
-export PATH=$PATH:/opt/scala/current
-export PATH=$PATH:/opt/scalatest/lib
 
 # google-cloud-sdk
 export PATH=$PATH:/opt/google-cloud-sdk/current
