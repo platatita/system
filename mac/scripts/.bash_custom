@@ -33,10 +33,6 @@ export PATH="$PATH:/opt/postgres/curren"
 export PATH=$PATH:/opt/scala/current
 export PATH=$PATH:/opt/scalatest/lib
 
-# ansible
-export ANSIBLE_HOSTS=~/ansible_hosts
-source ~/sources/git/ansible/hacking/env-setup
-
 # google-cloud-sdk
 export PATH=$PATH:/opt/google-cloud-sdk/current
 
@@ -67,3 +63,6 @@ function split_path() {
   echo $PATH | tr ":" "\n";
 }
 
+if [ -f ~/.bash_custom_linux ]; then
+    source ~/.bash_custom_linux
+fi
