@@ -7,7 +7,7 @@ trace_start $SCRIPTNAME
 
 
 trace "install virtualbox"
-sudo apt -y install virtualbox &&\
+sudo apt -y install virtualbox && \
 sudo apt update
 
 trace "download and install vagrant"
