@@ -13,6 +13,10 @@ alias movies='cd ~/Movies'
 alias pictures='cd ~/Pictures'
 alias system='cd ~/sources/git/system'
 
+# processes_monitor project
+alias pm='cd ~/sources/git/processes_monitor'
+alias pm_data='cd "C:\ProgramData\Microsoft Pms"'
+
 # launching sublime alias
 alias sublime='~/.sublime_run.sh'
 
@@ -36,8 +40,10 @@ alias gl='git log --color'
 alias gck='git checkout'
 alias gckm='git checkout master'
 alias gckd='git checkout dev'
-alias gpom='git push origin master'
-alias gpod='git push origin dev'
+alias gplom='git pull origin master'
+alias gplod='git pull origin dev'
+alias gphom='git push origin master'
+alias gphod='git push origin dev'
 
 # bundler
 alias be='bundle exec'
