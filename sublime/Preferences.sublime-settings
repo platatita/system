@@ -38,7 +38,10 @@
     "translate_tabs_to_spaces": true,
     "trim_trailing_white_space_on_save": true,
     "word_wrap": false,
-        // Set to false to prevent line numbers being drawn in the gutter
+
+    // Set to false to prevent line numbers being drawn in the gutter
     "line_numbers": true,
+
+    "file_exclude_patterns": ["*.pyc", "*.pyo", "*.obj","*.o", "*.a", "*.so", "*.dylib", "*.ncb", "*.sdf", "*.suo", ".DS_Store", "*.class", "*.psd", "*.db", "*.sublime-workspace"]
 }
 
