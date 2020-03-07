@@ -14,8 +14,10 @@ alias pictures='cd ~/Pictures'
 alias system='cd ~/sources/git/system'
 
 # processes_monitor project
-alias pm='cd ~/sources/git/processes_monitor'
-alias pm_data='cd "C:\ProgramData\Microsoft Pms"'
+alias pm_dev='cd ~/sources/git/processes_monitor'
+alias pm_pub='cd "C:\ProgramData\Microsoft Pms"'
+alias pm_data='cd "C:\ProgramData\Microsoft Pms\data"'
+alias pm_log='cd "C:\ProgramData\Microsoft Pms\log"'
 
 # launching sublime alias
 alias sublime='~/.sublime_run.sh'
