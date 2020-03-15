@@ -5,6 +5,8 @@ if [ -f ~/.bash_aliases_anixe ]; then
 fi
 
 # github repos aliases
+alias docs='cd ~/Documents'
+alias wiki='cd ~/Documents/wiki'
 alias downloads='cd ~/Downloads'
 alias dropbox='cd ~/Dropbox'
 alias dropbox_ver='cd ~/Dropbox/documents/versioned'

@@ -16,6 +16,7 @@ mkdir -pv ~/Documents/games
 mkdir -pv ~/Documents/developer/os_hints
 mkdir -pv ~/Documents/developer/ios
 mkdir -pv ~/Documents/screencapture
+mkdir -pv ~/Documents/wiki
 
 echo "create sources folder"
 mkdir -pv ~/sources/git
