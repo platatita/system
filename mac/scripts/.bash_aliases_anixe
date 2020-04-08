@@ -38,9 +38,15 @@ alias ariz_data='cd /var/data/resfinity/transformers'
 alias df_data='cd /var/data/resfinity/datafactory'
 alias scraper_data='cd /var/data/resfinity_api_scraper'
 
-# aclr8 group
-alias deploy='cd $ANX_GIT/aclr8/deploy'
+# aclr8 project
 alias aclr8='cd $ANX_GIT/aclr8/aclr8'
+## cargo aclr8
+alias ctatoms='cargo test -p aclr8_atoms'
+alias ctmolecules='cargo test -p aclr8_molecules'
+alias ctrepl='cargo test -p aclr8i'
+alias ctutils='cargo test -p aclr8_utils'
+# aclr8 group projects
+alias deploy='cd $ANX_GIT/aclr8/deploy'
 alias hs='cd $ANX_GIT/aclr8/hotels_service'
 alias mercures='cd $ANX_GIT/aclr8/mercures'
 alias com='cd $ANX_GIT/aclr8/com'
