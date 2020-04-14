@@ -45,6 +45,8 @@ alias ctatoms='cargo test -p aclr8_atoms'
 alias ctmolecules='cargo test -p aclr8_molecules'
 alias ctrepl='cargo test -p aclr8i'
 alias ctutils='cargo test -p aclr8_utils'
+alias cta='cargo test --all'
+alias ctaf='cargo test --all-features'
 # aclr8 group projects
 alias deploy='cd $ANX_GIT/aclr8/deploy'
 alias hs='cd $ANX_GIT/aclr8/hotels_service'
