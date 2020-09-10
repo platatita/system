@@ -1,0 +1,6 @@
+[user]
+	email = platatita@gmail.com
+	name = ms
+[core]
+	autocrlf = false
+	ignorecase = true
