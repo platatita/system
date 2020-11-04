@@ -3,6 +3,7 @@
 echo "create anixe folder structure"
 
 mkdir -pv ~/anx/var/log
+mkdir -pv ~/anx/var/data
 mkdir -pv ~/anx/bin/tools
 mkdir -pv ~/anx/sources/git
 mkdir -pv ~/anx/sources/github

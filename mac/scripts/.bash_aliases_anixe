@@ -7,6 +7,7 @@ alias anx='cd ~/anx'
 alias anxgit='cd $ANX_GIT'
 alias anxtmp='cd ~/anx/tmp'
 alias anxetc='cd ~/anx/etc'
+alias anxvar='cd ~/anx/var'
 
 alias anx_platform='cd ~/anx/etc/platform'
 alias anx_assembly='cd ~/anx/bin/assembly'
@@ -47,10 +48,14 @@ alias ctrepl='cargo test -p aclr8i'
 alias ctutils='cargo test -p aclr8_utils'
 alias cta='cargo test --all'
 alias ctaf='cargo test --all-features'
-# aclr8 group projects
+# aclr8 deploy projects
 alias deploy='cd $ANX_GIT/aclr8/deploy'
-alias hs='cd $ANX_GIT/aclr8/hotels_service'
+alias db_deploy='cd $ANX_GIT/aclr8/deploy/roles/cm_db'
+# aclr8 mercures projects
 alias mercures='cd $ANX_GIT/aclr8/mercures'
+alias mercures_repl='cd $ANX_GIT/aclr8/mercures/repl'
+# aclr8 group projects
+alias hs='cd $ANX_GIT/aclr8/hotels_service'
 alias com='cd $ANX_GIT/aclr8/com'
 alias cm_tools='cd $ANX_GIT/aclr8/cm_tools'
 alias rt='cd $ANX_GIT/aclr8/ratetiger_webservice'

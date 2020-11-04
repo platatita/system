@@ -1,12 +1,12 @@
 #! /bin/bash
 
-# it replaces all these characters [ -()+\[\]] in the folder or file name with underscore
+# it replaces all these characters `[ -()+\[\]]` in the folder or file name with underscore
 # options:
 # d - replace folders names [default]
 # f - replace files names
 
 # usage
-# * replace all subfolders of ~/tmp folder: ./translate_path ~/tmp 
+# * replace all subfolders of ~/tmp folder: ./translate_path ~/tmp
 # * replace all subfolders of current dir: ./translate_path .
 # * replace all file names of current dir: ./translate_path . f
 
@@ -18,7 +18,7 @@ if [ $# -lt 1 ]; then
   echo "usage"
   echo "./translate_path folder [folder (default) | in files (f)]"
   echo "examples:"
-  echo "* replace all subfolders of ~/tmp folder: ./translate_path ~/tmp" 
+  echo "* replace all subfolders of ~/tmp folder: ./translate_path ~/tmp"
   echo "* replace all subfolders of current dir:  ./translate_path ."
   echo "* replace all file names of current dir:  ./translate_path . f"
   exit 0
@@ -35,7 +35,7 @@ fi
 
 find $FIND_DIR -type $FIND_TYPE -not -path "." | awk -v FIND_TYPE=$FIND_TYPE '
   {
-    org_0 = $0; 
+    org_0 = $0;
     gsub(/[ -()+\[\]]/,"_", $0);
 
     split_0_count = split($0, split_0, ".");
@@ -59,7 +59,7 @@ find $FIND_DIR -type $FIND_TYPE -not -path "." | awk -v FIND_TYPE=$FIND_TYPE '
     {
       result = $0;
     }
-    
+
     if (result != org_0)
     {
       printf "\"%s\" %s\n", org_0, result;

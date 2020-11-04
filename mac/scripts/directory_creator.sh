@@ -6,6 +6,7 @@ fi
 
 echo "create Downloads folders"
 mkdir -pv ~/Downloads/safari
+mkdir -pv ~/Downloads/chrome
 mkdir -pv ~/Downloads/firefox
 mkdir -pv ~/Downloads/mailbox
 mkdir -pv ~/Downloads/utorrent
