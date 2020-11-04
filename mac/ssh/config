@@ -4,64 +4,117 @@ StrictHostKeyChecking   no
 ServerAliveInterval     30
 ForwardAgent            yes
 
+Host git.anixe.pl
+    Preferredauthentications publickey
+    IdentityFile ~/.ssh/ms_anixe_shared_host
+
+Host ark_aclr81
+    User marcin.szewczyk
+    HostName pozpdaclr8v1.hrc.lan
+    IdentityFile ~/.ssh/ms_anixe_shared_host
+
+Host ark_aclr82
+    User marcin.szewczyk
+    HostName pozpdaclr8v2.hrc.lan
+    IdentityFile ~/.ssh/ms_anixe_shared_host
+
+Host ark_cm
+    User marcin.szewczyk
+    HostName pozpdaclr8v3.hrc.lan
+    IdentityFile ~/.ssh/ms_anixe_shared_host
+
+Host ark_mercures
+    User marcin.szewczyk
+    HostName pozpdaclr8v4.hrc.lan
+    IdentityFile ~/.ssh/ms_anixe_shared_host
+
+Host ark_db1
+    User marcin.szewczyk
+    HostName pozpdsqlv1.hrc.lan
+    IdentityFile ~/.ssh/ms_anixe_shared_host
+
+Host gw
+    User resfinity
+    HostName gw.resfinity.net
+    IdentityFile ~/.ssh/ms_anixe_shared_host
+
+Host gwacc
+    User resfinity
+    HostName gw.resfinity.net
+    IdentityFile ~/.ssh/ms_anixe_shared_host
+
+Host jt-hx
+    User resfinity
+    HostName jt-hx.resfinity.net
+    IdentityFile ~/.ssh/ms_anixe_shared_host
+
+Host airtrade-hx
+    User resfinity
+    HostName airtrade-hx.resfinity.net
+    IdentityFile ~/.ssh/ms_anixe_shared_host
+
+Host mpep-hx
+    User resfinity
+    HostName mpep-hx.resfinity.net
+    IdentityFile ~/.ssh/ms_anixe_shared_host
+
 Host proxy1
     User deploy
     HostName proxy1.hrc.lan
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/ms_anixe_shared_host
 
 Host proxy2
     User deploy
     HostName proxy2.hrc.lan
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/ms_anixe_shared_host
 
 Host pozpp1
     User deploy
     HostName pozpp1.hrc.lan
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/ms_anixe_shared_host
 
 Host pozpp3
     User deploy
     HostName pozpp3.hrc.lan
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/ms_anixe_shared_host
 
 Host pozpp4
     User deploy
     HostName pozpp4.hrc.lan
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/ms_anixe_shared_host
 
 Host pozpp5
     User deploy
     HostName pozpp5.hrc.lan
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/ms_anixe_shared_host
 
 Host pozpp6
     User deploy
     HostName pozpp6.hrc.lan
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/ms_anixe_shared_host
 
 Host tfr1
     User deploy
     HostName tfr1.hrc.lan
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/ms_anixe_shared_host
 
 Host tfr2
     User deploy
     HostName tfr2.hrc.lan
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/ms_anixe_shared_host
 
 Host pozppv2
     User deploy
     HostName pozppv2.hrc.lan
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/ms_anixe_shared_host
 
 Host pozppv3
     User deploy
     HostName pozppv3.hrc.lan
-    IdentityFile ~/.ssh/id_rsa
+    IdentityFile ~/.ssh/ms_anixe_shared_host
 
 Host development_tunnel
     User deploy
     HostName acc.resfinity.com
     LocalForward 1212 192.168.194.232:22
-    IdentityFile ~/.ssh/id_rsa
-
+    IdentityFile ~/.ssh/ms_anixe_shared_host
