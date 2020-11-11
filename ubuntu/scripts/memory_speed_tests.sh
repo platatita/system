@@ -4,8 +4,8 @@
 sudo apt install mbw sysbench -y
 
 echo
-echo "* Running memory bandwidth test - 'mbw -t1 20000Gb'"
-mbw -t1 20000Gb
+echo "* Running memory bandwidth test: 'mbw -t1 20000Gb'"
+time mbw -t1 20000Gb
 
 # The sample of the output:
 # Long uses 8 bytes. Allocating 2*2621440000 elements = 41943040000 bytes of memory.
@@ -24,8 +24,8 @@ mbw -t1 20000Gb
 
 
 echo
-echo "* Memory short details - 'sudo lshw -short -C memory'"
-sudo lshw -short -C memory
+echo "* Memory short details: 'sudo lshw -short -C memory'"
+time sudo lshw -short -C memory
 
 # The sample of the output:
 # H/W path         Device           Class          Description
@@ -43,8 +43,8 @@ sudo lshw -short -C memory
 
 
 echo
-echo "* Running memory speed test - 'sysbench memory --memory-total-size=20000Gb --threads=16 run'"
-sysbench memory --memory-total-size=20000Gb --threads=16 run
+echo "* Running memory speed test: 'sysbench memory --memory-total-size=20000Gb --threads=16 run'"
+time sysbench memory --memory-total-size=20000Gb --threads=16 run
 
 # The sample of the output:
 # Total operations: 311096835 (31106333.30 per second)
