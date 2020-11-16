@@ -40,7 +40,7 @@ Host gw
 
 Host gwacc
     User resfinity
-    HostName gw.resfinity.net
+    HostName gwacc.resfinity.net
     IdentityFile ~/.ssh/ms_anixe_shared_host
 
 Host jt-hx
