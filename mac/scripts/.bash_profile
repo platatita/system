@@ -42,8 +42,8 @@ fi
 
 # Add the following lines to your ~/.bash_profile:
 if [[ "$OSTYPE" =~ "darwin" ]] && [[ -f "which brew" ]]; then
-  if [ -f $(brew --prefix)/etc/bash_completion ]; then
-      . $(brew --prefix)/etc/bash_completion
+  if [ -f $(brew --prefix)/etc/bash_completion.d/git-completion.bash ]; then
+      . $(brew --prefix)/etc/bash_completion.d/git-completion.bash
   fi
 fi
 
