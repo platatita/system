@@ -13,10 +13,10 @@ alias dropbox_ver='cd ~/Dropbox/documents/versioned'
 alias dropbox_nover='cd ~/Dropbox/documents/no_versioned'
 alias movies='cd ~/Movies'
 alias pictures='cd ~/Pictures'
-alias system='cd ~/sources/git/system'
+alias system='cd ~/sources/git/platatita/system'
 
 # processes_monitor project
-alias pm_dev='cd ~/sources/git/processes_monitor'
+alias pm_dev='cd ~/sources/git/platatita/processes_monitor'
 alias pm_pub='cd "C:\ProgramData\Microsoft Pms"'
 alias pm_data='cd "C:\ProgramData\Microsoft Pms\data"'
 alias pm_log='cd "C:\ProgramData\Microsoft Pms\log"'

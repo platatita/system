@@ -20,5 +20,5 @@ mkdir -pv ~/Documents/screencapture
 mkdir -pv ~/Documents/wiki
 
 echo "create sources folder"
-mkdir -pv ~/sources/git
+mkdir -pv ~/sources/git/platatita
 mkdir -pv ~/tmp
