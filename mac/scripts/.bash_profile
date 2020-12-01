@@ -41,7 +41,7 @@ if [ -f ~/.bash_custom ]; then
 fi
 
 # Add the following lines to your ~/.bash_profile:
-if [[ "$OSTYPE" =~ "darwin" ]] && [[ -f "which brew" ]]; then
+if [[ "$OSTYPE" =~ "darwin" ]] && [[ -f "`which brew`" ]]; then
   if [ -f $(brew --prefix)/etc/bash_completion.d/git-completion.bash ]; then
       . $(brew --prefix)/etc/bash_completion.d/git-completion.bash
   fi
