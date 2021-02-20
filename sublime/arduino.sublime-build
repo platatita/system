@@ -1,6 +1,0 @@
-// it should be plased in:
-// * /Users/<user>/Library/Application Support/Sublime Text 3/Packages/User/arduino.sublime-build'
-{
-    "shell_cmd": "arduino-cli compile -b arduino:avr:uno --libraries ../libraries --libraries /var/folders/vz/xdqgcrp57637bbxj5pnjrmqr0000gp/T/AppTranslocation/2E98E07D-A8FF-4BF0-BE8F-34133CDA3EC3/d/Arduino.app/Contents/Java/libraries ./",
-    "selector": "source.ino",
-}
