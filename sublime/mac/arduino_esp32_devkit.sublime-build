@@ -1,0 +1,6 @@
+// it should be plased in:
+// * /Users/<user>/Library/Application Support/Sublime Text 3/Packages/User/arduino_esp32_devkit.sublime-build
+{
+    "shell_cmd": "arduino-cli compile -b esp32:esp32:esp32doit-devkit-v1 --libraries ../libraries --libraries /Applications/Arduino.app/Contents/Java/libraries ./",
+    "selector": "source.ino",
+}

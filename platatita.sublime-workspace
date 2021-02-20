@@ -1,0 +1,269 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"mark li",
+				"MarkdownEditing: Markdown Lint"
+			],
+			[
+				"mark pre",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mar l",
+				"MarkdownEditing: Markdown Lint"
+			],
+			[
+				"stcon",
+				"ST: Setup Connections"
+			],
+			[
+				"prev",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mark pr",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"mark l",
+				"MarkdownEditing: Markdown Lint"
+			],
+			[
+				"markp",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"marp",
+				"Markdown Preview: Preview in Browser"
+			],
+			[
+				"ta",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"markdown",
+				"MarkdownEditing: Markdown Lint"
+			],
+			[
+				"mar",
+				"MarkdownEditing: Open Home Page"
+			],
+			[
+				"mark p",
+				"Markdown Preview: Open Markdown Cheat sheet"
+			],
+			[
+				"tab",
+				"Table Editor: Enable for current view"
+			],
+			[
+				"in",
+				"Package Control: Install Package"
+			],
+			[
+				"mark to",
+				"MarkdownEditing: Open Journal"
+			],
+			[
+				"p",
+				"Package Control: Install Package"
+			],
+			[
+				"mark",
+				"MarkdownEditing: Open Home Page"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"pack",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/Users/msz/sources/git/platatita",
+		"/Users/msz/sources/git/platatita/arduino"
+	],
+	"file_history":
+	[
+		"/Users/msz/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
+		"/Users/msz/sources/git/platatita/ai_a_z/docs/notes/general.md",
+		"/Users/msz/Library/Application Support/Sublime Text 3/Packages/User/Markdown (Standard).sublime-settings",
+		"/Users/msz/sources/git/platatita/ai_a_z/docs/notes/HomePage.md",
+		"/Users/msz/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown.sublime-settings",
+		"/Users/msz/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Bold and Italic Markers.tmPreferences",
+		"/Users/msz/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/Markdown (Standard).sublime-settings",
+		"/Users/msz/sources/git/platatita/system/sublime/Preferences.sublime-settings",
+		"/Users/msz/Library/Application Support/Sublime Text 3/Packages/MarkdownEditing/README.md",
+		"/Users/msz/sources/git/platatita/system/mac/scripts/.bash_aliases_anixe",
+		"/Users/msz/sources/git/platatita/system/mac/scripts/.bash_profile",
+		"/Users/msz/sources/git/platatita/ai_a_z/docs/notes/2020-12-01.md",
+		"/Users/msz/sources/git/system/mac/scripts/install_rust.sh",
+		"/Users/msz/sources/git/system/mac/scripts/install_brew.sh",
+		"/Users/msz/sources/git/system/mac/scripts/.zshrc",
+		"/Users/msz/sources/git/system/mac/scripts/.bash_profile"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 42.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.mde":
+	{
+		"height": 126.0
+	},
+	"pinned_build_system": "",
+	"project": "platatita.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": false,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 447.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
