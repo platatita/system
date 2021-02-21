@@ -1,0 +1,13 @@
+{
+  "cid": "5a4ee359-ea65-28a3-db6b-d670d9814f77",
+  "last_version": "5.1.0",
+  "last_check": {
+    "platformio_upgrade": 1613920336,
+    "platforms_update": 1613920337,
+    "libraries_update": 1613920337,
+    "prune_system": 1613920337
+  },
+  "settings": {
+    "projects_dir": "/Users/msz/sources/git/platatita/arduino/platform_io"
+  }
+}
