@@ -17,7 +17,9 @@ alias pictures='cd ~/Pictures'
 # platatita projects
 alias platatita='cd ~/sources/git/platatita'
 alias system='cd ~/sources/git/platatita/system'
-alias arduino='cd ~/sources/git/platatita/arduino'
+alias micros='cd ~/sources/git/platatita/microcontrollers'
+alias arduino='cd ~/sources/git/platatita/microcontrollers/arduino_ide'
+alias platformio='cd ~/sources/git/platatita/microcontrollers/platform_io'
 alias ai_a_z='cd ~/sources/git/platatita/ai_a_z'
 # processes_monitor project
 alias pm_dev='cd ~/sources/git/platatita/processes_monitor'
