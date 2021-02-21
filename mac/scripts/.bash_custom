@@ -1,5 +1,7 @@
 #! /bin/bash
 
+USER=`whoami`
+
 # for Mac OSX PATH is loaded in following order:
 # /private/etc/paths
 # /private/etc/paths.d/*
@@ -37,6 +39,9 @@ export PATH=$PATH:/usr/local/sbin
 
 # add qt bins
 export PATH="$PATH:/usr/local/opt/qt/bin"
+
+# add platformio bins
+export PATH="$PATH:/Users/$USER/.platformio/penv/bin"
 
 # disables adding by tar additional files like "._" while compressing
 export COPYFILE_DISABLE=true

@@ -3,10 +3,35 @@
 	{
 		"selected_items":
 		[
+			[
+				"esp",
+				"esptool"
+			],
+			[
+				"in",
+				"install_boards"
+			],
+			[
+				"add",
+				"add_index"
+			],
+			[
+				"Pa",
+				"PACKAGE_ESP32_INDEX_URL"
+			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "/Users/msz/sources/git/platatita/arduino/stepper_motor_28BYJ-48/stepper_motor_28BYJ-48.ino",
+			"settings":
+			{
+				"buffer_size": 671,
+				"encoding": "UTF-8",
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -19,6 +44,14 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"ardu",
+				"Build With: arduino_esp32_devkit"
+			],
+			[
+				"sy",
+				"Set Syntax: C++"
+			],
 			[
 				"mark li",
 				"MarkdownEditing: Markdown Lint"
@@ -121,10 +154,22 @@
 	"expanded_folders":
 	[
 		"/Users/msz/sources/git/platatita",
-		"/Users/msz/sources/git/platatita/arduino"
+		"/Users/msz/sources/git/platatita/arduino",
+		"/Users/msz/sources/git/platatita/system"
 	],
 	"file_history":
 	[
+		"/Users/msz/sources/git/platatita/arduino/arduino.sublime-project",
+		"/Users/msz/sources/git/platatita/system/sublime/mac/arduino_esp32_devkit.sublime-build",
+		"/Users/msz/sources/git/platatita/arduino/docs/installation/install_esp32.sh",
+		"/Users/msz/sources/git/platatita/arduino/README.md",
+		"/Users/msz/Library/Arduino15/packages/esp32/tools/esptool_py/2.6.1/esptool.py",
+		"/Users/msz/Library/Arduino15/packages/esp32/hardware/esp32/1.0.4/platform.txt",
+		"/Users/msz/Library/Arduino15/packages/esp32/hardware/esp32/1.0.4/tools/esptool.py",
+		"/Users/msz/Library/Arduino15/preferences.txt",
+		"/Users/msz/Library/Arduino15/packages/esp32/hardware/esp32/1.0.4/tools/packages/esp32/tools/esptool_py/2.6.1/esptool.py",
+		"/Users/msz/sources/git/platatita/system/sublime/mac/arduino_firebeetle_esp32.sublime-build",
+		"/Users/msz/sources/git/platatita/system/sublime/mac/copy.sh",
 		"/Users/msz/Library/Application Support/Sublime Text 3/Packages/User/Markdown.sublime-settings",
 		"/Users/msz/sources/git/platatita/ai_a_z/docs/notes/general.md",
 		"/Users/msz/Library/Application Support/Sublime Text 3/Packages/User/Markdown (Standard).sublime-settings",
@@ -144,7 +189,7 @@
 	],
 	"find":
 	{
-		"height": 27.0
+		"height": 39.0
 	},
 	"find_in_files":
 	{
@@ -158,6 +203,9 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"tools.esptool_py.cmd=esptool",
+			"ENTRY_EXIST",
+			"https://git.oschina.net/dfrobot/FireBeetle-ESP32/raw/master/package_esp32_index.json"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -175,14 +223,44 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "/Users/msz/sources/git/platatita/arduino/stepper_motor_28BYJ-48/stepper_motor_28BYJ-48.ino",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 671,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								668,
+								668
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/C++ Starting Kit/C++.tmLanguage",
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
 			]
 		}
 	],
 	"incremental_find":
 	{
-		"height": 27.0
+		"height": 26.0
 	},
 	"input":
 	{
@@ -211,6 +289,14 @@
 		]
 	},
 	"menu_visible": true,
+	"output.astyle_error_message":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 486.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
@@ -219,11 +305,11 @@
 	{
 		"height": 126.0
 	},
-	"pinned_build_system": "",
+	"pinned_build_system": "Packages/User/arduino_esp32_devkit.sublime-build",
 	"project": "platatita.sublime-project",
 	"replace":
 	{
-		"height": 50.0
+		"height": 48.0
 	},
 	"save_all_on_build": true,
 	"select_file":

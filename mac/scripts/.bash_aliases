@@ -13,8 +13,12 @@ alias dropbox_ver='cd ~/Dropbox/documents/versioned'
 alias dropbox_nover='cd ~/Dropbox/documents/no_versioned'
 alias movies='cd ~/Movies'
 alias pictures='cd ~/Pictures'
-alias system='cd ~/sources/git/platatita/system'
 
+# platatita projects
+alias platatita='cd ~/sources/git/platatita'
+alias system='cd ~/sources/git/platatita/system'
+alias arduino='cd ~/sources/git/platatita/arduino'
+alias ai_a_z='cd ~/sources/git/platatita/ai_a_z'
 # processes_monitor project
 alias pm_dev='cd ~/sources/git/platatita/processes_monitor'
 alias pm_pub='cd "C:\ProgramData\Microsoft Pms"'
@@ -62,7 +66,7 @@ alias berf='bundle exec rake features'
 alias bect='bundle exec cap -T'
 
 # mono
-alias opens='open -n *.sln'
+alias mono_open='open -n *.sln'
 
 # system
 alias ll='ls -asl'
